@@ -45,29 +45,7 @@ pip install -v -e .
 
 ### Dataset Preparation
 
-Get DOTA Dataset from [Online](https://captain-whu.github.io/DOTA/dataset.html), and extract them to the DOTA directory.
-
-``` shell
-cd ..
-
-# tree data -L 2
-# data
-# ├── test
-# │   └── images
-# ├── train
-# │   ├── images
-# │   └── labelTxt
-# └── val
-#     ├── images
-#     └── labelTxt
-
-python BboxToolkit/tools/img_split.py --base_json BboxToolkit/tools/configs/ss_dota_train.json
-python BboxToolkit/tools/img_split.py --base_json BboxToolkit/tools/configs/ss_dota_val.json
-python BboxToolkit/tools/img_split.py --base_json BboxToolkit/tools/configs/ss_dota_test.json
-
-# optional
-python BboxToolkit/tools/img_split.py --base_json BboxToolkit/tools/configs/ss_dota_trainval.json
-```
+Please refer to [DODet](https://github.com/yanqingyao1994/DODet#dataset-preparation) for dataset preparation.
 
 ### Training
 
